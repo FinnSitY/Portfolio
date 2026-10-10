@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerald E. Malto — Student Developer</title>
+  <meta name="description" content="Portfolio of Gerald E. Malto, 4th year BSIT student and aspiring web developer from Donsol, Sorsogon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="nav__mark" aria-label="Home">
+      <span class="nav__glyph">GM</span>
+      <span class="mono nav__status"><i class="dot"></i>Open for OJT / Internship</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#projects"><span class="mono">01</span>Projects</a>
+      <a href="#about"><span class="mono">02</span>About</a>
+      <a href="#education"><span class="mono">03</span>Education</a>
+      <a href="#contact"><span class="mono">04</span>Contact</a>
+    </nav>
+    <div class="nav__meta mono">
+      <span id="clock">--:--:--</span>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle light mode">
+        <span class="theme-btn__track"><span class="theme-btn__thumb"></span></span>
+      </button>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="contours" aria-hidden="true"></canvas>
+
+      <!-- Donsol, Sorsogon -->
+      <div class="hero__corner hero__corner--tl mono">LAT 12.9081° N<br />LON 123.5980° E</div>
+      <div class="hero__corner hero__corner--tr mono">DEPTH <span id="depth">0000</span> M</div>
+
+      <div class="hero__inner">
+        <p class="mono eyebrow reveal" data-scramble>[ 4th Year BSIT Student / Web Developer ]</p>
+        <h1 class="hero__title">
+          <span class="line reveal"><span>Learning</span></span>
+          <span class="line reveal"><span>to build <em>for</em></span></span>
+          <span class="line reveal"><span class="outline">the web.</span></span>
+        </h1>
+        <div class="hero__foot reveal">
+          <p class="hero__lede">
+            Hi, I'm Gerald, a 4th year BSIT student from Donsol, Sorsogon who likes turning
+            ideas into clean, working websites. I'm still learning, and this page is where I keep
+            what I've built so far.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn magnetic">
+              <span>See my projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v16m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost magnetic">
+              <span>Get in touch</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__ticker mono" aria-hidden="true">
+        <div class="ticker__track">
+          <span>HTML</span><span>/</span><span>CSS</span><span>/</span><span>C++</span><span>/</span><span>Learning JavaScript</span><span>/</span><span>Always learning</span><span>/</span>
+          <span>HTML</span><span>/</span><span>CSS</span><span>/</span><span>C++</span><span>/</span><span>Learning JavaScript</span><span>/</span><span>Always learning</span><span>/</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="mono section__num">01</span>
+        <h2 class="section__title reveal" data-scramble>Projects</h2>
+        <span class="mono section__count">School &amp; personal work</span>
+      </div>
+
+      <ol class="projects">
+        <li class="project reveal">
+          <a href="https://github.com/FinnSitY/Portfolio" target="_blank" rel="noopener" class="project__link">
+            <span class="mono project__idx">P/01</span>
+            <span class="project__name">Portfolio</span>
+            <span class="project__desc">This site. Hand-coded from scratch, including the animated contour map in the header</span>
+            <span class="mono project__tags">HTML · CSS · JS</span>
+            <span class="mono project__type">2026</span>
+          </a>
+          <div class="project__preview" aria-hidden="true">
+            <div class="pv pv--rings"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </li>
+        <li class="project reveal">
+          <a href="https://github.com/FinnSitY/To-Do-App" target="_blank" rel="noopener" class="project__link">
+            <span class="mono project__idx">P/02</span>
+            <span class="project__name">To-Do App</span>
+            <span class="project__desc">Mobile to-do app built with React Native and Expo, styled with NativeWind</span>
+            <span class="mono project__tags">TypeScript · Expo · Mobile</span>
+            <span class="mono project__type">2026</span>
+          </a>
+          <div class="project__preview" aria-hidden="true">
+            <div class="pv pv--grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </li>
+        <li class="project reveal">
+          <a href="https://github.com/FinnSitY/DigitalLiveclock" target="_blank" rel="noopener" class="project__link">
+            <span class="mono project__idx">P/03</span>
+            <span class="project__name">Digital Live Clock</span>
+            <span class="project__desc">Real-time digital clock that updates every second, built with React</span>
+            <span class="mono project__tags">React · Vite</span>
+            <span class="mono project__type">2025</span>
+          </a>
+          <div class="project__preview" aria-hidden="true">
+            <div class="pv pv--tide"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </li>
+        <li class="project reveal">
+          <a href="https://github.com/FinnSitY/quiz-app" target="_blank" rel="noopener" class="project__link">
+            <span class="mono project__idx">P/04</span>
+            <span class="project__name">Quiz App</span>
+            <span class="project__desc">Multiple-choice quiz page built from reusable React components and props</span>
+            <span class="mono project__tags">React · Vite</span>
+            <span class="mono project__type">2025</span>
+          </a>
+          <div class="project__preview" aria-hidden="true">
+            <div class="pv pv--wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </li>
+        <li class="project reveal">
+          <a href="https://github.com/FinnSitY/Web2-Ger" target="_blank" rel="noopener" class="project__link">
+            <span class="mono project__idx">P/05</span>
+            <span class="project__name">Web2 To-Do List</span>
+            <span class="project__desc">Class activity: a to-do list layout made of React components, styled with Tailwind</span>
+            <span class="mono project__tags">React · Tailwind</span>
+            <span class="mono project__type">2025</span>
+          </a>
+          <div class="project__preview" aria-hidden="true">
+            <div class="pv pv--grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </li>
+      </ol>
+
+      <p class="mono projects__more reveal">More on <a href="https://github.com/FinnSitY" target="_blank" rel="noopener">GitHub ↗</a></p>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="mono section__num">02</span>
+        <h2 class="section__title reveal" data-scramble>About</h2>
+        <span class="mono section__count">Donsol, Sorsogon, PH</span>
+      </div>
+
+      <div class="about">
+        <div class="about__text reveal">
+          <p class="about__big">
+            I'm a <span class="hl">4th year BS Information Technology student</span> at Computer Arts and
+            Technological College Inc., and I enjoy building things for the web.
+          </p>
+          <p>
+            I'm most comfortable with HTML, CSS and C++. JavaScript, PHP, React and backend
+            development are what I'm working on now. I know I still have a lot to learn there,
+            and that's exactly why I keep building projects like this one.
+          </p>
+          <p>
+            I'm looking for an OJT or internship where I can learn from a team, contribute to real
+            work, and get better every week.
+          </p>
+
+          <div class="now">
+            <div class="now__head mono"><span class="dot"></span>Currently</div>
+            <ul>
+              <li><span class="mono">Learning</span>JavaScript, PHP and React</li>
+              <li><span class="mono">Next</span>Backend basics: databases &amp; APIs</li>
+              <li><span class="mono">Finishing</span>4th year of college</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about__side">
+          <div class="stats reveal">
+            <div class="stat"><span class="stat__n" data-count="4">0</span><span class="mono stat__l">Year level</span></div>
+            <div class="stat"><span class="stat__n" id="age" data-count="21">0</span><span class="mono stat__l">Years old</span></div>
+          </div>
+
+          <div class="spec reveal">
+            <div class="spec__head mono"><span>Profile</span><span>ID.001</span></div>
+            <ul class="info">
+              <li><span class="mono">Name</span>Gerald E. Malto</li>
+              <li><span class="mono">Born</span>December 8, 2004</li>
+              <li><span class="mono">From</span>Tres Marias, Donsol, Sorsogon, Philippines</li>
+              <li><span class="mono">Course</span>BS Information Technology</li>
+              <li><span class="mono">School</span>Computer Arts and Technological College Inc.</li>
+            </ul>
+          </div>
+
+          <div class="spec reveal">
+            <div class="spec__head mono"><span>Skill sheet</span><span>Self-rated</span></div>
+            <ul class="skills">
+              <li class="skill" style="--lvl: 80%"><span class="skill__name">HTML &amp; CSS</span><span class="mono skill__tag">Comfortable</span><span class="skill__bar"><i></i></span></li>
+              <li class="skill" style="--lvl: 72%"><span class="skill__name">C++</span><span class="mono skill__tag">Comfortable</span><span class="skill__bar"><i></i></span></li>
+              <li class="skill" style="--lvl: 40%"><span class="skill__name">JavaScript</span><span class="mono skill__tag">Learning</span><span class="skill__bar"><i></i></span></li>
+              <li class="skill" style="--lvl: 30%"><span class="skill__name">PHP</span><span class="mono skill__tag">Learning</span><span class="skill__bar"><i></i></span></li>
+              <li class="skill" style="--lvl: 20%"><span class="skill__name">React &amp; Backend</span><span class="mono skill__tag">Just started</span><span class="skill__bar"><i></i></span></li>
+            </ul>
+            <div class="spec__foot mono">Tools: VS Code · Git · GitHub · Vite · Expo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <span class="mono section__num">03</span>
+        <h2 class="section__title reveal" data-scramble>Education</h2>
+        <span class="mono section__count">&amp; learning</span>
+      </div>
+
+      <div class="log">
+        <article class="log__row reveal">
+          <span class="mono log__date">4th Year</span>
+          <div class="log__body">
+            <h3>BS Information Technology <span>@ Computer Arts and Technological College Inc.</span></h3>
+            <p>Currently in my final year, studying programming, web development and computer fundamentals.</p>
+          </div>
+          <span class="mono log__state log__state--live">ONGOING</span>
+        </article>
+        <article class="log__row reveal">
+          <span class="mono log__date">Self-study</span>
+          <div class="log__body">
+            <h3>Web Development <span>@ Online &amp; personal projects</span></h3>
+            <p>Learning JavaScript, PHP, React and backend development on my own, one project at a time.</p>
+          </div>
+          <span class="mono log__state log__state--live">IN PROGRESS</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <span class="mono section__num">04</span>
+        <h2 class="section__title reveal" data-scramble>Contact</h2>
+        <span class="mono section__count">Let's talk</span>
+      </div>
+
+      <div class="contact__inner">
+        <p class="mono eyebrow reveal">Open for OJT, internships &amp; collabs</p>
+        <button class="contact__mail reveal" id="copyMail" data-email="geraldmalto7@gmail.com">
+          <span class="contact__mail-text">geraldmalto7@gmail.com</span>
+          <span class="mono contact__hint" id="copyHint">Click to copy</span>
+        </button>
+
+        <ul class="socials reveal">
+          <li><a href="https://github.com/FinnSitY" target="_blank" rel="noopener"><span class="mono">GH</span>GitHub</a></li>
+          <li><a href="https://www.facebook.com/gerald.malto.18" target="_blank" rel="noopener"><span class="mono">FB</span>Facebook</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Gerald E. Malto</span>
+    <span>Tres Marias, Donsol, Sorsogon</span>
+    <a href="#top">Back to surface ↑</a>
+  </footer>
+
+  <!-- Floating project preview that follows the cursor -->
+  <div class="cursor-preview" id="cursorPreview" aria-hidden="true"></div>
+  <!-- Crosshair cursor ring (desktop only) -->
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
